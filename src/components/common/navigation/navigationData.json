@@ -1,0 +1,68 @@
+{
+  "topNavigation": {
+    "webinar": {
+      "webinarText": "Webinar : Découvrez comment Aircall utilise sa propre solution pour mieux vendre.",
+      "webinarButton": "S'inscrire !"
+    },
+    "navigations": [
+      {
+        "text": "Devenir partenaire",
+        "theme": "white",
+        "isMenu": true
+      },
+      {
+        "text": "Entreprise",
+        "theme": "white",
+        "isMenu": true
+      },
+      {
+        "text": "+33 1 76 36 06 95",
+        "theme": "white",
+        "isMenu": false
+      },
+      {
+        "text": "Login",
+        "theme": "white",
+        "isMenu": false
+      }
+    ]
+  },
+  "bottomNavigation": {
+    "navigations": [
+      {
+        "text": "Pourquoi Aircall",
+        "theme": "black",
+        "isMenu": true
+      },
+      {
+        "text": "Solutions",
+        "theme": "black",
+        "isMenu": true
+      },
+      {
+        "text": "Prix",
+        "theme": "black",
+        "isMenu": false
+      },
+      {
+        "text": "Ressources",
+        "theme": "black",
+        "isMenu": true
+      }
+    ],
+    "buttons": [
+      {
+        "text": "Demandez une démo",
+        "theme": "light",
+        "url": "/",
+        "isTargetBlank": false
+      },
+      {
+        "text": "Essai gratuit",
+        "theme": "green",
+        "url": "/",
+        "isTargetBlank": false
+      }
+    ]
+  }
+}
