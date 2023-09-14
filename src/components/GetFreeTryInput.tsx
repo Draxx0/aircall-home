@@ -8,7 +8,7 @@ const GetFreeTryInput = () => {
         placeholder="Email professionnel"
         className="flex-1 outline-none text-secondary-500 leading-10 h-12 pl-2"
       />
-      <Button text="Essai gratuit" theme="green" url="/" />
+      <Button text="Essai gratuit" theme="green" url="/" size="py-3" />
     </div>
   );
 };

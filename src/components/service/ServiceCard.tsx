@@ -36,6 +36,7 @@ const ServiceCard = ({
                 theme={service.buttonParams.theme}
                 url={service.buttonParams.url}
                 isTargetBlank={service.buttonParams.isTargetBlank}
+                size="py-3"
               />
             </div>
           </div>
@@ -69,6 +70,7 @@ const ServiceCard = ({
                 theme={service.buttonParams.theme}
                 url={service.buttonParams.url}
                 isTargetBlank={service.buttonParams.isTargetBlank}
+                size="py-3"
               />
             </div>
           </div>

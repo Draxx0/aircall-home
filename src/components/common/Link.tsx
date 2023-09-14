@@ -25,7 +25,7 @@ const Link = ({ text, url, theme, isTargetBlank = false }: Props) => {
       {text}
       <Chevron
         theme={theme === "black" ? "green" : "black"}
-        className="-rotate-45 transition ease-in-out duration-300 group-hover:translate-x-1/2"
+        className="rotate-[315deg] transition ease-in-out duration-300 group-hover:translate-x-1/2"
       />
     </a>
   );

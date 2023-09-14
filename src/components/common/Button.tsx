@@ -1,15 +1,18 @@
 import clsx from "clsx";
+import { twMerge } from "tailwind-merge";
 export type BtnTheme = "green" | "light" | "white";
 
 const Button = ({
   url,
   text,
   theme,
+  size,
   isTargetBlank = false,
 }: {
   url: string;
   text: string;
   theme: BtnTheme;
+  size?: "py-3";
   isTargetBlank?: boolean;
 }) => {
   const buttonClasses = clsx(
@@ -20,7 +23,7 @@ const Button = ({
     "px-6 py-2 rounded-[32px] transition ease-in-out duration-300 font-semibold"
   );
   return (
-    <button className={`${buttonClasses}`}>
+    <button className={twMerge(buttonClasses, size)}>
       <a href={url} target={isTargetBlank ? "_blank" : ""}>
         {text}
       </a>
