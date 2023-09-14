@@ -1,0 +1,25 @@
+{
+  "companies": [
+    {
+      "image": "./images/company/saint-gobain.svg"
+    },
+    {
+      "image": "./images/company/audika.svg"
+    },
+    {
+      "image": "./images/company/izi-by-edf.svg"
+    },
+    {
+      "image": "./images/company/qonto.svg"
+    },
+    {
+      "image": "./images/company/ankorstore.svg"
+    },
+    {
+      "image": "./images/company/openclassrooms.svg"
+    },
+    {
+      "image": "./images/company/aircaraibes.svg"
+    }
+  ]
+}

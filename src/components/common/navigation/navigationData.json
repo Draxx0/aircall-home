@@ -16,6 +16,11 @@
         "isMenu": true
       },
       {
+        "text": "Contactez-nous",
+        "theme": "white",
+        "isMenu": false
+      },
+      {
         "text": "+33 1 76 36 06 95",
         "theme": "white",
         "isMenu": false
@@ -24,6 +29,11 @@
         "text": "Login",
         "theme": "white",
         "isMenu": false
+      },
+      {
+        "text": "FR",
+        "theme": "white",
+        "isMenu": true
       }
     ]
   },

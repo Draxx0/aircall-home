@@ -1,5 +1,5 @@
 import clsx from "clsx";
-export type BtnTheme = "green" | "light";
+export type BtnTheme = "green" | "light" | "white";
 
 const Button = ({
   url,

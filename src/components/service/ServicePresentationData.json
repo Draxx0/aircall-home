@@ -1,0 +1,141 @@
+{
+  "services": [
+    {
+      "image": "./images/upgrade-sells.webp",
+      "image_logos": [
+        {
+          "image": "./images/service_icons/salesforce_blue.svg"
+        },
+        {
+          "image": "./images/service_icons/hubspot.svg"
+        },
+        {
+          "image": "./images/service_icons/active-campaign.svg"
+        },
+        {
+          "image": "./images/service_icons/microsoft-dyn.svg"
+        },
+        {
+          "image": "./images/service_icons/salesloft.svg"
+        }
+      ],
+      "title": "Augmentez vos ventes",
+      "text": "Développez votre chiffre d'affaires en décrochant plus de rendez-vous avec le PowerDialer, la numérotation en un clic (Click to Dial), et l'analyse en temps réel.",
+      "buttonParams": {
+        "text": "Améliorez votre productivité",
+        "theme": "green",
+        "url": "/",
+        "isTargetBlank": false
+      },
+      "testimonial": {
+        "theme": "white",
+        "image": "./images/service_icons/testimonial_1.webp",
+        "author": "Sara Kinsella",
+        "function": "Responsable des opérations de vente chez Summit Solar",
+        "text": "'Nous avons augmenté nos quotas de 10 % grâce aux données que nous avons rassemblées avec les tags et les statistiques d’appel d’Aircall.'"
+      }
+    },
+    {
+      "image": "./images/upgrade-customer-service.webp",
+      "image_logos": [
+        {
+          "image": "./images/service_icons/zendesk.svg"
+        },
+        {
+          "image": "./images/service_icons/intercom.svg"
+        },
+        {
+          "image": "./images/service_icons/gorgias.svg"
+        },
+        {
+          "image": "./images/service_icons/front.svg"
+        }
+      ],
+      "title": "Améliorez votre Service Client",
+      "text": "Démarquez-vous de vos concurrents avec une expérience client unique comme le Serveur Vocal Interactif personnalisé, routage d'appels par compétence et les tableaux de bord en temps réel.",
+      "buttonParams": {
+        "text": "Déployez un Service Client exemplaire",
+        "theme": "green",
+        "url": "/",
+        "isTargetBlank": false
+      },
+      "testimonial": {
+        "theme": "white",
+        "image": "./images/service_icons/testimonial_2.svg",
+        "author": "Audrey Gostoli",
+        "function": "Co-fondatrice, Tiime",
+        "text": "'Le passage à la téléphonie d’entreprise cloud avec Aircall nous permet d’effectuer un suivi des KPIs pour identifier nos points forts et points faibles.'"
+      }
+    },
+    {
+      "image": "./images/connect-tools.webp",
+      "image_logos": [
+        {
+          "image": "./images/service_icons/monday-com.svg"
+        },
+        {
+          "image": "./images/service_icons/microsoft-teams.svg"
+        },
+        {
+          "image": "./images/service_icons/salesforce_blue.svg"
+        },
+        {
+          "image": "./images/service_icons/zapier.svg"
+        },
+        {
+          "image": "./images/service_icons/pipedrive.svg"
+        }
+      ],
+      "title": "Connectez vos outils",
+      "text": "Connectez facilement Aircall à vos différents outils CRM et Service Client. Consignez vos appels automatiquement dans les bonnes fiches clients avec toutes les données disponibles (durée d'appels, temps d'attente, enregistrement des conversations...)",
+      "buttonParams": {
+        "text": "Renforcez le travail d'équipe",
+        "theme": "white",
+        "url": "/",
+        "isTargetBlank": false
+      },
+      "testimonial": {
+        "theme": "blue",
+        "image": "./images/service_icons/testimonial_3.svg",
+        "author": "Julien Poyet",
+        "function": "Customer Service Manager, Kapten",
+        "text": "'Aircall peut nous aider à accompagner notre croissance et notre développement international, grâce à sa simplicité de déploiement et d'utilisation, ainsi que son fonctionnement dans tous les pays.'"
+      }
+    },
+    {
+      "image": "./images/easy-remote.webp",
+      "image_logos": [
+        {
+          "image": "./images/service_icons/slack.svg"
+        },
+        {
+          "image": "./images/service_icons/gorgias.svg"
+        },
+        {
+          "image": "./images/service_icons/shopify.svg"
+        },
+        {
+          "image": "./images/service_icons/zoho-crm.svg"
+        },
+        {
+          "image": "./images/service_icons/zapier.svg"
+        }
+      ],
+      "title": "Facilitez le télétravail",
+      "text": "Gérez efficacement vos équipes en télétravail grâce à la téléphonie 100% cloud et assurez la continuité de votre activité où que vous soyez.",
+      "buttonParams": {
+        "text": "En savoir plus",
+        "theme": "green",
+        "url": "/",
+        "isTargetBlank": false
+      },
+      "testimonial": {
+        "theme": "white",
+        "image": "./images/service_icons/testimonial_4.webp",
+        "author": "Anton Zillberberg",
+        "function": "CEO et Fondateur, QuickStay",
+        "text": "'Nous avons évalué plusieurs fournisseurs et Aircall était le seul qui permette une telle flexibilité et un tel niveau de personnalisation pour notre service à la clientèle et nos pratiques commerciales'"
+      }
+    }
+  ]
+}

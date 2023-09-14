@@ -1,0 +1,44 @@
+{
+  "products": [
+    {
+      "video": "./videos/set-up-in-second-fr.mp4",
+      "title": "Mise en place en 3 min",
+      "text": "Découvrez notre solution 100% cloud que vous pouvez installer rapidement pour appeler partout dans le monde.",
+      "buttonParams": {
+        "text": "Toutes nos fonctionnalités",
+        "url": "/",
+        "isTargetBlank": false
+      }
+    },
+    {
+      "video": "./videos/connect-to-your-tools-fr.mp4",
+      "title": "Connectez vos outils",
+      "text": "Améliorez vos appels avec la remontée de fiches. Intégrez Aircall à vos outils CRM, Service Client et vos autres applications.",
+      "buttonParams": {
+        "text": "Voici notre marketplace",
+        "url": "/",
+        "isTargetBlank": false
+      }
+    },
+    {
+      "video": "./videos/gain-visibility-fr.mp4",
+      "title": "Mesurez vos KPI",
+      "text": "Analysez les bons indicateurs en temps réel pour prendre les bonnes décisions au bon moment.",
+      "buttonParams": {
+        "text": "Gardez un oeil sur vos KPI",
+        "url": "/",
+        "isTargetBlank": false
+      }
+    },
+    {
+      "video": "./videos/enable-productivity-fr.mp4",
+      "title": "Améliorez votre productivité",
+      "text": "Créez rapidement de nouveaux process, numéros et groupes de compétences quand vous en avez besoin.",
+      "buttonParams": {
+        "text": "Découvrez nos cas clients",
+        "url": "/",
+        "isTargetBlank": false
+      }
+    }
+  ]
+}
