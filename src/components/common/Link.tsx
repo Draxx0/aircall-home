@@ -4,16 +4,25 @@ import Chevron from "./Chevron";
 type Props = {
   text: string;
   url: string;
-  theme: "black";
+  theme: "black" | "white";
   isTargetBlank?: boolean;
+  hasChevron?: boolean;
 };
 
-const Link = ({ text, url, theme, isTargetBlank = false }: Props) => {
+const Link = ({
+  text,
+  url,
+  theme,
+  isTargetBlank = false,
+  hasChevron = false,
+}: Props) => {
   const linkClasses = clsx(
     {
-      "text-secondary-500 hover:text-green-500": theme === "black",
+      "text-secondary-500 hover:text-green-500 flex items-center justify-center gap-2":
+        theme === "black",
+      "text-white opacity-70 hover:opacity-100": theme === "white",
     },
-    "font-bold flex items-center justify-center gap-2 group transition ease-in-out duration-300"
+    "font-bold group transition ease-in-out duration-300"
   );
 
   return (
@@ -23,10 +32,12 @@ const Link = ({ text, url, theme, isTargetBlank = false }: Props) => {
       target={isTargetBlank ? "_blank" : ""}
     >
       {text}
-      <Chevron
-        theme={theme === "black" ? "green" : "black"}
-        className="rotate-[315deg] transition ease-in-out duration-300 group-hover:translate-x-1/2"
-      />
+      {hasChevron && (
+        <Chevron
+          theme={theme === "black" ? "green" : "black"}
+          className="rotate-[315deg] transition ease-in-out duration-300 group-hover:translate-x-1/2"
+        />
+      )}
     </a>
   );
 };

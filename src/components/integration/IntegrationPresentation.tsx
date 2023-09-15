@@ -19,7 +19,7 @@ const IntegrationPresentation = () => {
   );
 
   return (
-    <div className="bg-secondary-700 py-[80px]">
+    <div className="bg-secondary-700 mt-7 py-[80px]">
       <div className="container">
         <h2 className="text-4xl font-bold text-white mx-auto text-center max-w-2xl">
           {integrations.title}

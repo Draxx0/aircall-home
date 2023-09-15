@@ -20,6 +20,7 @@ const ProductCard = ({
         url={data.buttonParams.url}
         isTargetBlank={data.buttonParams.isTargetBlank}
         theme="black"
+        hasChevron
       />
     </div>
   );

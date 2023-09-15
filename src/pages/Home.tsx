@@ -1,8 +1,9 @@
 import HeaderImage from "../assets/images/header_image.webp";
 import GetFreeTryInput from "../components/GetFreeTryInput";
+import DemoBlock from "../components/common/DemoBlock";
 import Section from "../components/common/Section";
 import CompanySlider from "../components/company/CompanySlider";
-import IntegrationPresentation from "../components/integration/integrationPresentation";
+import IntegrationPresentation from "../components/integration/IntegrationPresentation";
 import ProductPresentation from "../components/product/ProductPresentation";
 import ServicePresentation from "../components/service/ServicePresentation";
 
@@ -46,6 +47,10 @@ const Home = () => {
 
       <Section>
         <IntegrationPresentation />
+      </Section>
+
+      <Section isContainer>
+        <DemoBlock />
       </Section>
     </>
   );

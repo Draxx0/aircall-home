@@ -1,0 +1,223 @@
+{
+  "medias_links": [
+    {
+      "name": "facebook",
+      "path": "./images/medias/facebook.svg",
+      "alt": "Icone facebook",
+      "type": "media",
+      "url": "/"
+    },
+    {
+      "name": "twitter",
+      "path": "./images/medias/twitter.svg",
+      "alt": "Icone twitter",
+      "type": "media",
+      "url": "/"
+    },
+    {
+      "name": "linkedin",
+      "path": "./images/medias/linkedin.svg",
+      "alt": "Icone linkedin",
+      "type": "media",
+      "url": "/"
+    },
+    {
+      "name": "instagram",
+      "path": "./images/medias/instagram.svg",
+      "alt": "Icone instagram",
+      "type": "media",
+      "url": "/"
+    },
+    {
+      "name": "applestore",
+      "path": "./images/medias/appstore.svg",
+      "alt": "Icone applestore",
+      "type": "store",
+      "url": "/"
+    },
+    {
+      "name": "playstore",
+      "path": "./images/medias/playstore.svg",
+      "alt": "Icone playstore",
+      "type": "store",
+      "url": "/"
+    }
+  ],
+  "internal_links": [
+    {
+      "title": "Solutions",
+      "links": [
+        {
+          "text": "Centre d'appel",
+          "url": "/"
+        },
+        {
+          "text": "Service client",
+          "url": "/"
+        },
+        {
+          "text": "Sales",
+          "url": "/"
+        },
+        {
+          "text": "Téléphonie d'entreprise",
+          "url": "/"
+        },
+        {
+          "text": "E-commerce",
+          "url": "/"
+        },
+        {
+          "text": "Association",
+          "url": "/"
+        }
+      ]
+    },
+    {
+      "title": "Produit",
+      "links": [
+        {
+          "text": "Intégrations",
+          "url": "/"
+        },
+        {
+          "text": "Qualité et fiabilité",
+          "url": "/"
+        },
+        {
+          "text": "Apps",
+          "url": "/"
+        },
+        {
+          "text": "Prix",
+          "url": "/"
+        },
+        {
+          "text": "Pays disponibles",
+          "url": "/"
+        },
+        {
+          "text": "Demander une démo",
+          "url": "/"
+        }
+      ]
+    },
+    {
+      "title": "Fonctionnalités",
+      "links": [
+        {
+          "text": "PowerDialer",
+          "url": "/"
+        },
+        {
+          "text": "SVI",
+          "url": "/"
+        },
+        {
+          "text": "Routage d'appels",
+          "url": "/"
+        },
+        {
+          "text": "Analyse Centre d'appels",
+          "url": "/"
+        },
+        {
+          "text": "Intégration CTI",
+          "url": "/"
+        },
+        {
+          "text": "Click to Dial",
+          "url": "/"
+        }
+      ]
+    },
+    {
+      "title": "Ressources",
+      "links": [
+        {
+          "text": "Blog",
+          "url": "/"
+        },
+        {
+          "text": "Knowledge Base",
+          "url": "/"
+        },
+        {
+          "text": "Partner stories",
+          "url": "/"
+        },
+        {
+          "text": "Devenir partenaire",
+          "url": "/"
+        },
+        {
+          "text": "Créer une intégration",
+          "url": "/"
+        },
+        {
+          "text": "Document VoIP",
+          "url": "/"
+        },
+        {
+          "text": "Glossaire",
+          "url": "/"
+        },
+        {
+          "text": "Speed Test",
+          "url": "/"
+        }
+      ]
+    },
+    {
+      "title": "Entreprise",
+      "links": [
+        {
+          "text": "Contactez-nous",
+          "url": "/"
+        },
+        {
+          "text": "À propos",
+          "url": "/"
+        },
+        {
+          "text": "Emplois",
+          "url": "/"
+        },
+        {
+          "text": "Presse",
+          "url": "/"
+        },
+        {
+          "text": "Uptime",
+          "url": "/"
+        },
+        {
+          "text": "La marque",
+          "url": "/"
+        }
+      ]
+    }
+  ],
+  "legal_menus": [
+    {
+      "title": "Legal",
+      "url": "/"
+    },
+    {
+      "title": "Politique de confidentialité",
+      "url": "/"
+    },
+    {
+      "title": "Securité",
+      "url": "/"
+    },
+    {
+      "title": "Plan du site",
+      "url": "/"
+    },
+    {
+      "title": "Préférences en matière de cookies",
+      "url": "/"
+    }
+  ]
+}
