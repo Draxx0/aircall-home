@@ -56,13 +56,8 @@ const Footer = () => {
                 <h6 className="text-xl font-bold">{i_link.title}</h6>
                 <ul>
                   {i_link.links.map((link, index) => (
-                    <li className="mb-2">
-                      <Link
-                        text={link.text}
-                        url={link.url}
-                        theme="white"
-                        key={index}
-                      />
+                    <li className="mb-2" key={index}>
+                      <Link text={link.text} url={link.url} theme="white" />
                     </li>
                   ))}
                 </ul>

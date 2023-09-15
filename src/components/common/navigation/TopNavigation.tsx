@@ -3,10 +3,20 @@ import { navigationDataInterface } from "../../../types/navigationTypes";
 
 import MenuButton from "../MenuButton";
 
-const TopNavigation = ({ data }: { data: navigationDataInterface }) => {
+const TopNavigation = ({
+  data,
+  isScrolled,
+}: {
+  data: navigationDataInterface;
+  isScrolled: boolean;
+}) => {
   const { webinar, navigations } = data.topNavigation;
   return (
-    <nav className="bg-main-700 relative justify-center min-h-[48px] before:w-[47.5%] before:block before:absolute before:left-0 before:top-0 before:z-[1] before:rounded-tr-[32px] before:rounded-br-[32px] before:bg-main-300 flex flex-col items-center before:h-full">
+    <nav
+      className={`bg-main-700 relative justify-center ${
+        isScrolled ? "min-h-0" : "min-h-[48px]"
+      } before:w-[47.5%] before:block before:absolute before:left-0 before:top-0 before:z-[1] before:rounded-tr-[32px] before:rounded-br-[32px] before:bg-main-300 flex flex-col items-center before:h-full`}
+    >
       <div className="w-full flex justify-between items-center container z-10">
         <div className="text-white max-w-[45%]">
           <div className="flex items-center gap-2 leading-5">
