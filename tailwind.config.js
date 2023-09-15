@@ -26,6 +26,11 @@ export default {
         /* Secondary color */
         "secondary-500": "#012635",
         "secondary-900": "#151a28",
+        "secondary-700": "#06374b",
+      },
+      backgroundImage: {
+        "gradient-custom":
+          "linear-gradient(128.79deg, rgba(255,255,255,.3) 0, rgba(255,255,255,.15) 100%)",
       },
     },
   },
