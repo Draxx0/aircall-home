@@ -23,7 +23,7 @@ const HorizontalServiceCard = ({
           className="rounded-[32px] h-full object-cover"
           alt="image représentant l'augmentation de vente"
         />
-        <div className="absolute bottom-4 backdrop-blur-2xl bg-gradient-to-l from-gray-300 to-gray-400  left-4 flex items-center gap-2 p-2 rounded-[24px]">
+        <div className="absolute bottom-4 backdrop-blur-2xl bg-gradient-custom left-4 flex items-center gap-2 p-2 rounded-[24px]">
           {service.image_logos.map((im, index) => (
             <img src={im.image} alt="logo de service" key={index} />
           ))}

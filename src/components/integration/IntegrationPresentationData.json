@@ -1,0 +1,84 @@
+{
+  "integrations": {
+    "title": "La téléphonie d'entreprise connectée à vos outils",
+    "subtitle": "Découvrez nos plus de 100 autres intégrations",
+    "integrations_data": [
+      {
+        "image": "./images/service_icons/salesforce_blue.svg",
+        "integration_name": "Salesforce",
+        "integration_role": "CRM"
+      },
+      {
+        "image": "./images/service_icons/hubspot.svg",
+        "integration_name": "HubSpot",
+        "integration_role": "CRM"
+      },
+      {
+        "image": "./images/service_icons/zendesk.svg",
+        "integration_name": "Zendesk",
+        "integration_role": "Help Desk"
+      },
+      {
+        "image": "./images/service_icons/intercom.svg",
+        "integration_name": "Intercom",
+        "integration_role": "Help Desk - Live Chat"
+      },
+      {
+        "image": "./images/service_icons/monday-com.svg",
+        "integration_name": "monday.com",
+        "integration_role": "CRM"
+      },
+      {
+        "image": "./images/service_icons/shopify.svg",
+        "integration_name": "Shopify",
+        "integration_role": "Ecommerce"
+      },
+      {
+        "image": "./images/service_icons/gorgias.svg",
+        "integration_name": "Gorgias",
+        "integration_role": "Ecommerce"
+      },
+      {
+        "image": "./images/service_icons/microsoft-teams.svg",
+        "integration_name": "Microsoft teams",
+        "integration_role": "Productivité"
+      },
+      {
+        "image": "./images/service_icons/pipedrive.svg"
+      },
+      {
+        "image": "./images/service_icons/make.svg"
+      },
+      {
+        "image": "./images/service_icons/edesk.svg"
+      },
+      {
+        "image": "./images/service_icons/bulhorn.svg"
+      },
+      {
+        "image": "./images/service_icons/outreach.svg"
+      },
+      {
+        "image": "./images/service_icons/kustomer.svg"
+      },
+      {
+        "image": "./images/service_icons/typeform.svg"
+      },
+      {
+        "image": "./images/service_icons/jiminny.svg"
+      },
+      {
+        "image": "./images/service_icons/sakari.svg"
+      },
+      {
+        "image": "./images/service_icons/segment.svg"
+      },
+      {
+        "image": "./images/service_icons/snapcall.svg"
+      },
+      {
+        "image": "./images/service_icons/crisp.svg"
+      }
+    ]
+  }
+}
