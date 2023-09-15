@@ -1,6 +1,7 @@
 import { servicePresentationType } from "../../types/servicePresentationType";
 import servicePresentationData from "./ServicePresentationData.json";
-import ServiceCard from "./ServiceCard";
+import HorizontalServiceCard from "./serviceCard/HorizontalServiceCard";
+import VerticalServiceCard from "./serviceCard/VerticalServiceCard";
 
 const ServicePresentation = () => {
   const servicesJson: servicePresentationType =
@@ -8,6 +9,7 @@ const ServicePresentation = () => {
   const { services } = servicesJson;
 
   const twoFirstServices = services.slice(0, 2);
+  const twoLastServices = services.slice(2, 4);
 
   return (
     <>
@@ -17,7 +19,17 @@ const ServicePresentation = () => {
 
       <div className="flex justify-between gap-6">
         {twoFirstServices.map((service, index) => (
-          <ServiceCard service={service} key={index} theme="white" />
+          <VerticalServiceCard service={service} key={index} theme="white" />
+        ))}
+      </div>
+
+      <div className="mt-6 space-y-7">
+        {twoLastServices.map((service, index) => (
+          <HorizontalServiceCard
+            service={service}
+            key={index}
+            theme={service.card_theme}
+          />
         ))}
       </div>
     </>

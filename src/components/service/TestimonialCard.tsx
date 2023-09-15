@@ -26,14 +26,26 @@ const TestimonialCard = ({
         />
         <div className="space-y-3">
           <div>
-            <h4 className="text-secondary-900 text-lg font-semibold">
+            <h4
+              className={`${
+                theme === "white" ? "text-secondary-900" : "text-white"
+              } text-lg font-semibold`}
+            >
               {testimonial.author}
             </h4>
-            <p className="text-secondary-900 mb-2 text-lg">
+            <p
+              className={`${
+                theme === "white" ? "text-secondary-900" : "text-white"
+              } mb-2 text-lg`}
+            >
               {testimonial.function}
             </p>
           </div>
-          <blockquote className="text-secondary-900 opacity-70 text-lg">
+          <blockquote
+            className={`${
+              theme === "white" ? "text-secondary-900" : "text-white"
+            } opacity-70 text-lg`}
+          >
             {testimonial.text}
           </blockquote>
         </div>

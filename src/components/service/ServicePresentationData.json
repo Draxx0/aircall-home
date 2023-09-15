@@ -2,6 +2,8 @@
   "services": [
     {
       "image": "./images/upgrade-sells.webp",
+      "card_theme": "white",
+      "display": "row",
       "image_logos": [
         {
           "image": "./images/service_icons/salesforce_blue.svg"
@@ -37,6 +39,8 @@
     },
     {
       "image": "./images/upgrade-customer-service.webp",
+      "card_theme": "white",
+      "display": "row",
       "image_logos": [
         {
           "image": "./images/service_icons/zendesk.svg"
@@ -69,6 +73,8 @@
     },
     {
       "image": "./images/connect-tools.webp",
+      "card_theme": "blue",
+      "display": "row",
       "image_logos": [
         {
           "image": "./images/service_icons/monday-com.svg"
@@ -104,6 +110,8 @@
     },
     {
       "image": "./images/easy-remote.webp",
+      "card_theme": "white",
+      "display": "row-reverse",
       "image_logos": [
         {
           "image": "./images/service_icons/slack.svg"

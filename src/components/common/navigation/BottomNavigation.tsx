@@ -16,11 +16,11 @@ const BottomNavigation = ({ data }: { data: navigationDataInterface }) => {
             {navigations.map((n, index) => (
               <li className="flex items-center gap-1" key={index}>
                 {n.isMenu ? (
-                  <MenuButton text={n.text} theme={n.theme} />
+                  <MenuButton isTopNav={false} text={n.text} theme={n.theme} />
                 ) : (
                   <a
                     href="/"
-                    className="text-secondary-900 hover:text-main-500 transition ease-in-out duration-200"
+                    className="text-secondary-900 text-lg hover:text-main-500 transition ease-in-out duration-200 hover:before:block before:hidden relative before:absolute before:w-full before:h-[2px] before:left-0 before:bg-main-500 before:rounded-full before:-bottom-[33px]"
                   >
                     {n.text}
                   </a>

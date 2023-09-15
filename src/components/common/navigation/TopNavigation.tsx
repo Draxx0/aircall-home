@@ -12,7 +12,7 @@ const TopNavigation = ({ data }: { data: navigationDataInterface }) => {
           <div className="flex items-center gap-2 leading-5">
             <img src={Calendar} alt="icone de calendrier" className="w-5" />
             <div>
-              <p className="text-sm">{webinar.webinarText}</p>
+              <p>{webinar.webinarText}</p>
               <a href="/" className="underline ">
                 {webinar.webinarButton}
               </a>
@@ -22,9 +22,9 @@ const TopNavigation = ({ data }: { data: navigationDataInterface }) => {
         <div className="max-w-[55%]">
           <ul className="flex items-center gap-5 [&>*:nth-child(4)]:bg-main-200 [&>*:nth-child(4)]:transition [&>*:nth-child(4)]:duration-200 [&>*:nth-child(4)]:ease-in-out [&>*:nth-child(4):hover]:bg-hover-200 [&>*:nth-child(4)]:rounded-[32px] [&>*:nth-child(4)]:py-[2px] [&>*:nth-child(4)]:px-[10px]">
             {navigations.map((n, index) => (
-              <li className="flex items-center gap-1 text-sm" key={index}>
+              <li className="flex items-center gap-1" key={index}>
                 {n.isMenu ? (
-                  <MenuButton text={n.text} theme={n.theme} />
+                  <MenuButton isTopNav text={n.text} theme={n.theme} />
                 ) : (
                   <a
                     href="/"
