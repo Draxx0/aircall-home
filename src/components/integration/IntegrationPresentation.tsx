@@ -20,12 +20,12 @@ const IntegrationPresentation = () => {
 
   return (
     <div className="bg-secondary-700 mt-7 py-[80px]">
-      <div className="container">
+      <div className="lg:container px-4">
         <h2 className="text-4xl font-bold text-white mx-auto text-center max-w-2xl">
           {integrations.title}
         </h2>
 
-        <div className="grid grid-cols-4 gap-6 mt-12">
+        <div className="md:grid md:grid-cols-4 md:gap-6 mt-12">
           {detailedIntegrations.map((integration, index) => (
             <DetailledCard integration={integration} key={index} />
           ))}
@@ -35,14 +35,19 @@ const IntegrationPresentation = () => {
           {integrations.subtitle}
         </p>
 
-        <div className="flex gap-6 mt-4">
+        <div className="md:flex md:gap-6 mt-4">
           {simpleIntegrations.map((integration, index) => (
             <SimpleCard integration={integration} key={index} />
           ))}
         </div>
 
         <div className="text-center mt-16">
-          <Button text="Voir tous les outils" theme="white" url="/" />
+          <Button
+            text="Voir tous les outils"
+            theme="white"
+            url="/"
+            size="py-3"
+          />
         </div>
       </div>
     </div>

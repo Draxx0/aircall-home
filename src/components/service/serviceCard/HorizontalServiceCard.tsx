@@ -14,13 +14,13 @@ const HorizontalServiceCard = ({
       className={`${
         theme === "white" ? "bg-gray-100" : "bg-secondary-500"
       } rounded-[64px] p-16 flex ${
-        service.display === "row" ? "flex-row" : "flex-row-reverse"
-      } gap-7`}
+        service.display === "row" ? "lg:flex-row" : "lg:flex-row-reverse"
+      } gap-7 flex-col`}
     >
-      <div className="relative min-w-[50%]">
+      <div className="relative lg:min-w-[50%]">
         <img
           src={service.image}
-          className="rounded-[32px] h-full object-cover"
+          className="rounded-[32px] xl:max-h-[520px] w-full h-full object-cover"
           alt="image représentant l'augmentation de vente"
         />
         <div className="absolute bottom-4 backdrop-blur-2xl bg-gradient-custom left-4 flex items-center gap-2 p-2 rounded-[24px]">
@@ -29,7 +29,7 @@ const HorizontalServiceCard = ({
           ))}
         </div>
       </div>
-      <div className="flex flex-col justify-between">
+      <div className="flex flex-col justify-between xl:gap-0 gap-10">
         <div>
           <h3
             className={`text-4xl ${

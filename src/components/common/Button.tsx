@@ -21,7 +21,7 @@ const Button = ({
       "bg-main-lighter text-main-500 hover:bg-hover-lighter": theme === "light",
       "bg-white text-secondary-900 hover:opacity-20": theme === "white",
     },
-    "px-6 py-2 rounded-[32px] transition ease-in-out duration-300 text-lg font-semibold"
+    "xl:px-6 xl:py-2 py-1 px-4 w-full md:w-auto rounded-[32px] transition ease-in-out duration-300 text-lg font-semibold"
   );
   return (
     <button className={twMerge(buttonClasses, size)}>

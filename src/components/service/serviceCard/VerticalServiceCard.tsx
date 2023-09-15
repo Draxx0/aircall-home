@@ -13,13 +13,13 @@ const ServiceCard = ({
     <div
       className={`${
         theme === "white" ? "bg-gray-100" : "bg-secondary-500"
-      } rounded-[64px] p-16`}
+      } rounded-[64px] p-16 w-full lg:w-1/2`}
     >
       <div className="mb-14 space-y-6">
         <div className="relative">
           <img
             src={service.image}
-            className="rounded-[32px] max-h-[300px] min-w-[475px] object-cover"
+            className="rounded-[32px] w-full lg:max-h-[300px] object-cover"
             alt="image représentant l'augmentation de vente"
           />
           <div className="absolute bottom-4 backdrop-blur-2xl bg-gradient-custom  left-4 flex items-center gap-2 p-2 rounded-[24px]">

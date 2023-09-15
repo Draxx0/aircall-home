@@ -17,7 +17,7 @@ const ServicePresentation = () => {
         Créez de la valeur à partir de vos appels
       </h2>
 
-      <div className="flex justify-between gap-6">
+      <div className="flex flex-col lg:flex-row lg:justify-between gap-6">
         {twoFirstServices.map((service, index) => (
           <VerticalServiceCard service={service} key={index} theme="white" />
         ))}

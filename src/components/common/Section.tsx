@@ -6,7 +6,7 @@ const Section = ({
   isContainer?: boolean;
 }) => {
   return (
-    <section className={`pb-16 ${isContainer ? "container" : null}`}>
+    <section className={`pb-16 ${isContainer ? "lg:container px-4" : ""}`}>
       {children}
     </section>
   );

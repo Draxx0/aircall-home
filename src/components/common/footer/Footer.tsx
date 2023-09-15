@@ -16,14 +16,14 @@ const Footer = () => {
   );
   return (
     <footer className="bg-secondary-500 rounded-t-[64px] pt-[96px] pb-[48px] text-white">
-      <div className="container space-y-8">
-        <div className="flex">
-          <div className="space-y-4">
+      <div className="lg:container px-4 lg:space-y-8">
+        <div className="md:flex relative space-y-4 md:space-y-0">
+          <div className=" md:space-y-4">
             <img src={WhiteLogo} alt="Logo aircall blanc" className="mb-6" />
-            <span className="text-2xl max-w-xs block">
+            <span className="text-2xl md:max-w-xs block">
               La solution de téléphonie d'entreprise cloud - VoIP
             </span>
-            <div className="space-y-3">
+            <div className="space-y-3 md:block flex items-center gap-5">
               <span>Suivez-nous</span>
               <ul className="flex gap-4">
                 {medias.map((media, index) => (
@@ -36,7 +36,7 @@ const Footer = () => {
                 ))}
               </ul>
             </div>
-            <div className="space-y-3">
+            <div className="space-y-3 md:block flex items-center gap-5">
               <span>App mobile</span>
               <ul className="flex gap-4">
                 {stores.map((store, index) => (
@@ -50,9 +50,12 @@ const Footer = () => {
               </ul>
             </div>
           </div>
-          <div className="grid grid-cols-3 flex-1 gap-y-12 relative">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 flex-1 gap-y-12 gap-x-4 pb-20 md:pb-0">
             {internal_links.map((i_link, index) => (
-              <div key={index} className="space-y-6">
+              <div
+                key={index}
+                className="space-y-6 md:border-none border-t border-gray-600 md:pt-0 pt-4"
+              >
                 <h6 className="text-xl font-bold">{i_link.title}</h6>
                 <ul>
                   {i_link.links.map((link, index) => (
@@ -63,16 +66,16 @@ const Footer = () => {
                 </ul>
               </div>
             ))}
-            <img
-              src={AwsLogo}
-              alt="logo aws"
-              className="absolute bottom-0 right-0 w-14"
-            />
           </div>
+          <img
+            src={AwsLogo}
+            alt="logo aws"
+            className="absolute bottom-0 left-0 lg:left-auto lg:right-0 w-14"
+          />
         </div>
-        <div className="py-6 border-t border-gray-600 flex gap-8">
+        <div className="py-6 lg:border-t lg:border-gray-600 flex lg:flex-row flex-col lg:gap-8 gap-3">
           <p className="w-1/5 max-w-[50%] opacity-70">Copyright Aircall 2023</p>
-          <div className="flex gap-6">
+          <div className="flex lg:flex-row flex-col gap-3 lg:gap-6">
             {legal_menus.map((menu, index) => (
               <a key={index} href={menu.url} className="hover:opacity-70">
                 {menu.title}

@@ -2,14 +2,28 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
+    screens: {
+      sm: "480px",
+
+      md: "768px",
+
+      lg: "1024px",
+
+      xl: "1280px",
+
+      "2xl": "1536px",
+    },
     container: {
       center: true,
       padding: {
         DEFAULT: "1rem",
-        lg: "0rem",
+        xl: "0rem",
       },
       screens: {
-        lg: "1240px",
+        xl: "1279px",
+        lg: "1024px",
+        md: "768px",
+        sm: "480",
       },
     },
     extend: {
@@ -31,6 +45,15 @@ export default {
       backgroundImage: {
         "gradient-custom":
           "linear-gradient(128.79deg, rgba(255,255,255,.3) 0, rgba(255,255,255,.15) 100%)",
+      },
+      animation: {
+        movingText: "movingText 40s linear infinite",
+      },
+      keyframes: {
+        movingText: {
+          "0%": { transform: "translateX(100%)" },
+          "100%": { transform: "translateX(-250%)" },
+        },
       },
     },
   },

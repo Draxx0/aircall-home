@@ -15,7 +15,7 @@ const Header = () => {
   }, []);
 
   return (
-    <header className="fixed top-0 left-0 w-full z-50 border-b min-h-[calc(96px + 48px)] border-gray-100">
+    <header className="fixed top-0 left-0 w-full z-50 xl:border-b min-h-[calc(96px + 48px)] xl:border-gray-100">
       <TopNavigation data={navigationDataJson} isScrolled={isScrolled} />
       <BottomNavigation data={navigationDataJson} isScrolled={isScrolled} />
     </header>

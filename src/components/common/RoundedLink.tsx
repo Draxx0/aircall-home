@@ -8,7 +8,7 @@ const RoundedLink = ({
   alt?: string;
 }) => {
   return (
-    <li className="group w-8 h-8 rounded-full p-2 bg-white/10">
+    <li className="group w-8 h-8 rounded-full p-2 md:bg-white/10">
       <a href={url} target="_blank">
         <img
           src={path}

@@ -11,7 +11,7 @@ const ProductPresentation = () => {
         Une mise en place rapide pour une téléphonie cloud sur mesure
       </h2>
 
-      <div className="grid gap-x-6 gap-y-14 row-grap grid-cols-2 max-w-5xl mx-auto">
+      <div className="md:grid md:gap-x-6 md:gap-y-14 md:row-grap md:grid-cols-2 md:max-w-5xl md:mx-auto flex flex-col gap-10 py-3">
         {products.map((product, index) => (
           <ProductCard data={product} key={index} />
         ))}
