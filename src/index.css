@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  font-family: "Dosis", sans-serif;
+}
+
 body {
   padding-top: 145px; /* topNav + bottomNav heights. */
 }
