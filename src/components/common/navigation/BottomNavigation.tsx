@@ -46,7 +46,7 @@ const BottomNavigation = ({
                       className={`text-secondary-900 text-lg hover:text-main-500 transition ease-in-out duration-200 hover:before:block before:hidden relative before:absolute before:w-full before:h-[2px] before:left-0 before:bg-main-500 before:rounded-full ${
                         isScrolled
                           ? "before:-bottom-[17px]"
-                          : "before:-bottom-[33px]"
+                          : "before:-bottom-[35px]"
                       }`}
                     >
                       {n.text}
