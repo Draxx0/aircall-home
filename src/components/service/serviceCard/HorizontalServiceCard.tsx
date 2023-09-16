@@ -1,6 +1,8 @@
+import { useRef } from "react";
 import { servicePresentationType } from "../../../types/servicePresentationType";
 import Button from "../../common/Button";
 import TestimonialCard from "../TestimonialCard";
+import useAnimation from "../../../hooks/useAnimation";
 
 const HorizontalServiceCard = ({
   service,
@@ -9,8 +11,13 @@ const HorizontalServiceCard = ({
   service: servicePresentationType["services"][0];
   theme: "blue" | "white";
 }) => {
+  const containerRef = useRef<HTMLDivElement>(null);
+  useAnimation({
+    ref: containerRef,
+  });
   return (
     <div
+      ref={containerRef}
       className={`${
         theme === "white" ? "bg-gray-100" : "bg-secondary-500"
       } rounded-[64px] p-16 flex ${

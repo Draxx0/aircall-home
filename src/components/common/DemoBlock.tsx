@@ -1,10 +1,16 @@
+import { useRef } from "react";
 import DemoBlocBg from "../../assets/images/demo-bloc-bg.svg";
 import WhiteLogo from "../../assets/images/logo-white.webp";
 import Button from "./Button";
+import useAnimation from "../../hooks/useAnimation";
 
 const DemoBlock = () => {
+  const containerRef = useRef<HTMLDivElement>(null);
+  useAnimation({
+    ref: containerRef,
+  });
   return (
-    <div className="relative p-5 md:py-14 md:px-10">
+    <div className="relative p-5 md:py-14 md:px-10" ref={containerRef}>
       <img
         src={DemoBlocBg}
         alt="fond bleu du bloc de demo"
