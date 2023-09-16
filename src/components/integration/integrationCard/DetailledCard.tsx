@@ -8,7 +8,7 @@ const DetailledCard = ({
   return (
     <a
       href="/"
-      className="cursor-pointer flex items-center gap-2 px-4 py-3 rounded-[16px] relative
+      className="cursor-pointer flex items-center gap-2 p-5 md:px-4 md:py-3 rounded-[16px] relative overflow-hidden
       before:w-full before:h-full before:absolute before:inset-0 before:rounded-[16px] before:bg-gradient-custom before:hover:opacity-100 before:transition before:duration-200 before:ease-in-out before:backdrop-blur-2xl before:opacity-[66%] before:block before:z-0"
     >
       <img
@@ -17,10 +17,10 @@ const DetailledCard = ({
         alt="image représentant l'augmentation de vente"
       />
       <div className="relative z-10">
-        <h3 className="text-white text-xl font-semibold">
+        <h3 className="text-white text-xl font-semibold whitespace-nowrap">
           {integration.integration_name}
         </h3>
-        <span className="text-white font-semibold opacity-50">
+        <span className="text-white font-semibold whitespace-nowrap opacity-50">
           {integration.integration_role}
         </span>
       </div>

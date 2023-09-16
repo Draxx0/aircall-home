@@ -5,7 +5,7 @@ const Layout = ({ children }: { children: React.ReactElement }) => {
   return (
     <>
       <Header />
-      <main className="mt">{children}</main>
+      <main className="relative">{children}</main>
       <Footer />
     </>
   );

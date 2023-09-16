@@ -2,6 +2,7 @@ import Calendar from "../../../assets/icons/calendar.webp";
 import { navigationDataInterface } from "../../../types/navigationTypes";
 
 import MenuButton from "../MenuButton";
+import Slider from "../Slider";
 import WebinarMovingText from "./WebinarMovingText";
 
 const TopNavigation = ({
@@ -53,19 +54,15 @@ const TopNavigation = ({
       </nav>
       <nav className="bg-main-700 relative xl:hidden w-full top-0">
         <div className="border-b border-gray-300 py-3">
-          <div className="w-full overflow-hidden flex items-center h-full">
-            <div className="overflow-hidden flex flex-row relative w-full transform-none">
-              <div className="flex-auto min-w-full z-[1] flex flex-row items-center animate-movingText">
-                <div className="flex-auto flex flex-row gap-10">
-                  <WebinarMovingText webinar={webinar} />
-                  <WebinarMovingText webinar={webinar} />
-                  <WebinarMovingText webinar={webinar} />
-                  <WebinarMovingText webinar={webinar} />
-                  <WebinarMovingText webinar={webinar} />
-                </div>
-              </div>
-            </div>
-          </div>
+          <Slider>
+            <>
+              <WebinarMovingText webinar={webinar} />
+              <WebinarMovingText webinar={webinar} />
+              <WebinarMovingText webinar={webinar} />
+              <WebinarMovingText webinar={webinar} />
+              <WebinarMovingText webinar={webinar} />
+            </>
+          </Slider>
         </div>
         <div className="py-3 px-4 flex justify-end">
           <ul className="flex gap-3 [&>*:nth-child(1)]:bg-main-200 [&>*:nth-child(1)]:transition [&>*:nth-child(1)]:duration-200 [&>*:nth-child(1)]:ease-in-out [&>*:nth-child(1):hover]:bg-hover-200 [&>*:nth-child(1)]:rounded-[32px] [&>*:nth-child(1)]:py-[2px] [&>*:nth-child(1)]:px-[10px]">
