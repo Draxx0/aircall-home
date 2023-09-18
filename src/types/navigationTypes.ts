@@ -11,6 +11,26 @@ export interface navigationDataInterface {
       text: string;
       theme: MenuBtnTheme;
       isMenu: boolean;
+      menuData?: {
+        title: string;
+        contents: {
+          text: string;
+          url: string;
+          image?: string;
+        }[];
+        link?: {
+          text: string;
+          url: string;
+        };
+      }[];
+      footerMenuData?: {
+        title: string;
+        subtitle?: string;
+        buttonData: {
+          text: string;
+          url: string;
+        };
+      };
     }[];
   };
   bottomNavigation: {
@@ -18,6 +38,34 @@ export interface navigationDataInterface {
       text: string;
       theme: MenuBtnTheme;
       isMenu: boolean;
+      menuData?: {
+        title?: string;
+        secondTitle?: string;
+        contents: {
+          text: string;
+          url: string;
+          image?: string;
+        }[];
+        secondContents?: {
+          text: string;
+          url: string;
+          image?: string;
+        }[];
+        isGrid?: boolean;
+        theme?: "gray" | "blue";
+        link?: {
+          text: string;
+          url: string;
+        };
+      }[];
+      footerMenuData?: {
+        title: string;
+        subtitle?: string;
+        buttonData: {
+          text: string;
+          url: string;
+        };
+      };
     }[];
     buttons: {
       text: string;

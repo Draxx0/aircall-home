@@ -8,12 +8,71 @@
       {
         "text": "Devenir partenaire",
         "theme": "white",
-        "isMenu": true
+        "isMenu": true,
+        "menuData": [
+          {
+            "title": "partenaires",
+            "contents": [
+              {
+                "text": "Partenaires Intégration",
+                "url": "/",
+                "image": "./images/menus_icon/messaging.svg"
+              },
+              {
+                "text": "Partenaire Commercial",
+                "url": "/",
+                "image": "./images/menus_icon/gear.svg"
+              },
+              {
+                "text": "Partner Stories",
+                "url": "/",
+                "image": "./images/menus_icon/star-icon.svg"
+              }
+            ]
+          }
+        ]
       },
       {
         "text": "Entreprise",
         "theme": "white",
-        "isMenu": true
+        "isMenu": true,
+        "menuData": [
+          {
+            "title": "aircall",
+            "contents": [
+              {
+                "text": "À propos",
+                "url": "/",
+                "image": "./images/menus_icon/aircall-icon.svg"
+              },
+              {
+                "text": "Brand",
+                "url": "/",
+                "image": "./images/menus_icon/star-icon.svg"
+              }
+            ]
+          },
+          {
+            "title": "vie d'entreprise",
+            "contents": [
+              {
+                "text": "Emplois",
+                "url": "/",
+                "image": "./images/menus_icon/newuser-icon.svg"
+              },
+              {
+                "text": "Événements",
+                "url": "/",
+                "image": "./images/menus_icon/megaphone-icon.svg"
+              },
+              {
+                "text": "Presse",
+                "url": "/",
+                "image": "./images/menus_icon/note-icon.svg"
+              }
+            ]
+          }
+        ]
       },
       {
         "text": "Contactez-nous",
@@ -33,7 +92,29 @@
       {
         "text": "FR",
         "theme": "white",
-        "isMenu": true
+        "isMenu": true,
+        "menuData": [
+          {
+            "contents": [
+              {
+                "text": "English",
+                "url": "/"
+              },
+              {
+                "text": "English (GB)",
+                "url": "/"
+              },
+              {
+                "text": "Deutsch",
+                "url": "/"
+              },
+              {
+                "text": "Español",
+                "url": "/"
+              }
+            ]
+          }
+        ]
       }
     ]
   },
@@ -42,12 +123,178 @@
       {
         "text": "Pourquoi Aircall",
         "theme": "black",
-        "isMenu": true
+        "isMenu": true,
+        "menuData": [
+          {
+            "title": "aircall",
+            "contents": [
+              {
+                "text": "Fonctionnalités",
+                "url": "/"
+              },
+              {
+                "text": "Qualité & Fiabilité",
+                "url": "/"
+              },
+              {
+                "text": "Nos cas client",
+                "url": "/"
+              }
+            ],
+            "isGrayBg": false,
+            "link": {
+              "text": "Essai gratuit",
+              "url": "/"
+            }
+          },
+          {
+            "title": "nos intégrations",
+            "contents": [
+              {
+                "text": "Salesforce",
+                "url": "/",
+                "image": "./images/service_icons/salesforce_blue.svg"
+              },
+              {
+                "text": "HubSpot",
+                "url": "/",
+                "image": "./images/service_icons/hubspot.svg"
+              },
+              {
+                "text": "Intercom",
+                "url": "/",
+                "image": "./images/service_icons/intercom.svg"
+              },
+              {
+                "text": "Zendesk",
+                "url": "/",
+                "image": "./images/service_icons/zendesk.svg"
+              },
+              {
+                "text": "Pipedrive",
+                "url": "/",
+                "image": "./images/service_icons/pipedrive.svg"
+              },
+              {
+                "text": "MS Dynamics",
+                "url": "/",
+                "image": "./images/service_icons/microsoft-dyn.svg"
+              }
+            ],
+            "theme": "gray",
+            "isGrid": true,
+            "link": {
+              "text": "Découvrez nos plus de 100 autres intégrations",
+              "url": "/"
+            }
+          }
+        ],
+        "footerMenuData": {
+          "title": "boostez la productivité et la performance de l'équipe",
+          "subtitle": "Tout en réduisant les coûts avec Aircall",
+          "buttonData": {
+            "text": "En savoir plus",
+            "url": "/"
+          }
+        }
       },
       {
         "text": "Solutions",
         "theme": "black",
-        "isMenu": true
+        "isMenu": true,
+        "menuData": [
+          {
+            "title": "par équipe",
+            "contents": [
+              {
+                "text": "Vente",
+                "url": "/",
+                "image": "./images/menus_icon/messaging.svg"
+              },
+              {
+                "text": "IT & Opérations",
+                "url": "/",
+                "image": "./images/menus_icon/globe.svg"
+              },
+              {
+                "text": "Service Client",
+                "url": "/",
+                "image": "./images/menus_icon/headset.svg"
+              },
+              {
+                "text": "Pour tous",
+                "url": "/",
+                "image": "./images/menus_icon/gear.svg"
+              }
+            ]
+          },
+          {
+            "title": "par taille d'entreprise",
+            "secondTitle": "principaux cas d'usage",
+            "contents": [
+              {
+                "text": "Petites entreprises",
+                "url": "/",
+                "image": "./images/menus_icon/small-business.svg"
+              },
+              {
+                "text": "Entreprises de taille intermédiaire",
+                "url": "/",
+                "image": "./images/menus_icon/business-bag.svg"
+              }
+            ],
+            "secondContents": [
+              {
+                "text": "Centre d'appels",
+                "url": "/",
+                "image": "./images/menus_icon/call.svg"
+              },
+              {
+                "text": "Téléphonie d'entreprise",
+                "url": "/",
+                "image": "./images/menus_icon/pad.svg"
+              }
+            ],
+            "theme": "gray"
+          },
+          {
+            "title": "Par industrie",
+            "contents": [
+              {
+                "text": "Formation & Écoles en ligne",
+                "url": "/",
+                "image": "./images/menus_icon/ribbon.svg"
+              },
+              {
+                "text": "Service financiers",
+                "url": "/",
+                "image": "./images/menus_icon/card.svg"
+              },
+              {
+                "text": "Santé",
+                "url": "/",
+                "image": "./images/menus_icon/heart.svg"
+              },
+              {
+                "text": "Marketing & Publicité",
+                "url": "/",
+                "image": "./images/menus_icon/marketing.svg"
+              }
+            ],
+            "link": {
+              "text": "Plus d'industries",
+              "url": "/"
+            }
+          }
+        ],
+        "footerMenuData": {
+          "title": "découvrez notre solution",
+          "subtitle": "Facile à installer. Simple à utiliser. Intégrée à vos outils.",
+          "buttonData": {
+            "text": "Demander une démo",
+            "url": "/"
+          }
+        }
       },
       {
         "text": "Prix",
@@ -57,7 +304,112 @@
       {
         "text": "Ressources",
         "theme": "black",
-        "isMenu": true
+        "isMenu": true,
+        "menuData": [
+          {
+            "title": "produit",
+            "contents": [
+              {
+                "text": "Téléchargements",
+                "url": "/",
+                "image": "./images/menus_icon/aircall.svg"
+              },
+              {
+                "text": "Documentation API",
+                "url": "/",
+                "image": "./images/menus_icon/code.svg"
+              },
+              {
+                "text": "Nouveautés produit",
+                "url": "/",
+                "image": "./images/menus_icon/notification.svg"
+              },
+              {
+                "text": "Légal",
+                "url": "/",
+                "image": "./images/menus_icon/tag.svg"
+              }
+            ]
+          },
+          {
+            "title": "documentation",
+            "contents": [
+              {
+                "text": "Guides",
+                "url": "/",
+                "image": "./images/menus_icon/template.svg"
+              },
+              {
+                "text": "Documentation VoIP",
+                "url": "/",
+                "image": "./images/menus_icon/folder.svg"
+              },
+              {
+                "text": "Glossaire",
+                "url": "/",
+                "image": "./images/menus_icon/info.svg"
+              },
+              {
+                "text": "Onboarding Portal",
+                "url": "/",
+                "image": "./images/menus_icon/assign.svg"
+              },
+              {
+                "text": "Centre d'aide",
+                "url": "/",
+                "image": "./images/menus_icon/home.svg"
+              },
+              {
+                "text": "Test de vitesse VoIP",
+                "url": "/",
+                "image": "./images/menus_icon/calendar.svg"
+              },
+              {
+                "text": "Vidéos",
+                "url": "/",
+                "image": "./images/menus_icon/play.svg"
+              }
+            ]
+          },
+          {
+            "title": "Blog",
+            "contents": [
+              {
+                "text": "Centre d'appels",
+                "url": "/"
+              },
+              {
+                "text": "Ventes",
+                "url": "/"
+              },
+              {
+                "text": "VoIP",
+                "url": "/"
+              },
+              {
+                "text": "Service Client",
+                "url": "/"
+              },
+              {
+                "text": "Téléphonie d'entreprise",
+                "url": "/"
+              }
+            ],
+            "theme": "blue",
+            "link": {
+              "text": "Découvrir notre blog",
+              "url": "/"
+            }
+          }
+        ],
+        "footerMenuData": {
+          "title": "découvrez notre solution",
+          "subtitle": "Facile à installer. Simple à utiliser. Intégrée à vos outils.",
+          "buttonData": {
+            "text": "Demander une démo",
+            "url": "/"
+          }
+        }
       }
     ],
     "buttons": [

@@ -60,7 +60,12 @@ const Footer = () => {
                 <ul>
                   {i_link.links.map((link, index) => (
                     <li className="mb-2" key={index}>
-                      <Link text={link.text} url={link.url} theme="white" />
+                      <Link
+                        isAlignCenter={false}
+                        text={link.text}
+                        url={link.url}
+                        theme="white"
+                      />
                     </li>
                   ))}
                 </ul>

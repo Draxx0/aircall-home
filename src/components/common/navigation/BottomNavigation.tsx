@@ -2,8 +2,8 @@ import { useState } from "react";
 import Logo from "../../../assets/images/logo.png";
 import { navigationDataInterface } from "../../../types/navigationTypes";
 import Button from "../Button";
-import MenuButton from "../MenuButton";
 import BurgerMenu from "./BurgerMenu";
+import MenuContainer from "./MenuContainer";
 
 const BottomNavigation = ({
   data,
@@ -14,6 +14,7 @@ const BottomNavigation = ({
 }) => {
   const { navigations, buttons } = data.bottomNavigation;
   const [isBurgerOpen, setIsBurgerOpen] = useState(false);
+
   return (
     <>
       <nav
@@ -30,29 +31,14 @@ const BottomNavigation = ({
                 className="w-40"
               />
             </a>
-            <ul className="flex items-center gap-11">
+            <ul className="flex items-center gap-11 h-full">
               {navigations.map((n, index) => (
-                <li className="flex items-center gap-1" key={index}>
-                  {n.isMenu ? (
-                    <MenuButton
-                      isTopNav={false}
-                      text={n.text}
-                      theme={n.theme}
-                      isScrolled={isScrolled}
-                    />
-                  ) : (
-                    <a
-                      href="/"
-                      className={`text-secondary-900 text-lg hover:text-main-500 transition ease-in-out duration-200 hover:before:block before:hidden relative before:absolute before:w-full before:h-[2px] before:left-0 before:bg-main-500 before:rounded-full ${
-                        isScrolled
-                          ? "before:-bottom-[17px]"
-                          : "before:-bottom-[35px]"
-                      }`}
-                    >
-                      {n.text}
-                    </a>
-                  )}
-                </li>
+                <MenuContainer
+                  isScrolled={isScrolled}
+                  n={n}
+                  key={index}
+                  isTopNav={false}
+                />
               ))}
             </ul>
           </div>

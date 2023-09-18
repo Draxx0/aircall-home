@@ -1,8 +1,10 @@
+import React from "react";
 import Calendar from "../../../assets/icons/calendar.webp";
 import { navigationDataInterface } from "../../../types/navigationTypes";
 
 import MenuButton from "../MenuButton";
 import Slider from "../Slider";
+import MenuContainer from "./MenuContainer";
 import WebinarMovingText from "./WebinarMovingText";
 
 const TopNavigation = ({
@@ -32,21 +34,23 @@ const TopNavigation = ({
               </div>
             </div>
           </div>
-          <div className="max-w-[55%]">
+          <div className="max-w-[55%] flex min-h-[40px]">
             <ul className="flex items-center gap-5 [&>*:nth-child(4)]:bg-main-200 [&>*:nth-child(4)]:transition [&>*:nth-child(4)]:duration-200 [&>*:nth-child(4)]:ease-in-out [&>*:nth-child(4):hover]:bg-hover-200 [&>*:nth-child(4)]:rounded-[32px] [&>*:nth-child(4)]:py-[2px] [&>*:nth-child(4)]:px-[10px]">
               {navigations.map((n, index) => (
-                <li className="flex items-center gap-1" key={index}>
+                <React.Fragment key={index}>
                   {n.isMenu ? (
-                    <MenuButton isTopNav text={n.text} theme={n.theme} />
+                    <MenuContainer
+                      isScrolled={isScrolled}
+                      n={n}
+                      key={index}
+                      isTopNav={true}
+                    />
                   ) : (
-                    <a
-                      href="/"
-                      className="text-white hover:text-main-lighter transition ease-in-out duration-200"
-                    >
-                      {n.text}
-                    </a>
+                    <li className="text-white hover:text-main-lighter transition ease-in-out duration-200">
+                      <a href="/">{n.text}</a>
+                    </li>
                   )}
-                </li>
+                </React.Fragment>
               ))}
             </ul>
           </div>

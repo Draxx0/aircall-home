@@ -5,6 +5,7 @@ type Props = {
   text: string;
   url: string;
   theme: "black" | "white";
+  isAlignCenter?: boolean;
   isTargetBlank?: boolean;
   hasChevron?: boolean;
 };
@@ -13,14 +14,15 @@ const Link = ({
   text,
   url,
   theme,
+  isAlignCenter = true,
   isTargetBlank = false,
   hasChevron = false,
 }: Props) => {
   const linkClasses = clsx(
     {
-      "text-secondary-500 hover:text-green-500 flex items-center justify-center gap-2":
-        theme === "black",
+      "text-secondary-500 hover:text-green-500": theme === "black",
       "text-white opacity-70 hover:opacity-100": theme === "white",
+      "flex items-center justify-center gap-2": isAlignCenter,
     },
     "font-bold group transition ease-in-out duration-300"
   );
@@ -34,7 +36,7 @@ const Link = ({
       {text}
       {hasChevron && (
         <Chevron
-          theme={theme === "black" ? "green" : "black"}
+          theme="green"
           className="rotate-[315deg] transition ease-in-out duration-300 group-hover:translate-x-1/2"
         />
       )}
