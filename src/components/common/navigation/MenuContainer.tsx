@@ -42,7 +42,9 @@ const MenuContainer = ({
               <div className="flex gap-6 justify-between text-black">
                 {n.menuData?.map((menu, index) => (
                   <div
-                    className={`flex flex-col gap-8 py-6 ${
+                    className={`${
+                      menu.title ? "flex flex-col gap-8" : ""
+                    } py-6 ${
                       menu.theme === "gray"
                         ? "bg-gray-100 px-6 rounded-[24px]"
                         : menu.theme === "blue"

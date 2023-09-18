@@ -10,7 +10,7 @@ type Props = {
 
 const NavigationMenu = ({ data, hasFooter = false, children }: Props) => {
   return (
-    <div className="shadow-lg rounded-[24px]">
+    <div className="shadow-lg rounded-[24px] relative z-50">
       <div className={`bg-white relative z-10 rounded-b-[24px] px-10 py-3`}>
         {children}
       </div>

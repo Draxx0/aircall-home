@@ -58,7 +58,7 @@ const BottomNavigation = ({
       <nav className="max-h-[96px] xl:hidden bg-white p-3 border-b border-white">
         <div className="flex justify-between items-center">
           <a href="/">
-            <img src={Logo} alt="Logo et nom d'entreprise." className="w-32" />
+            <img src={Logo} alt="Logo et nom d'entreprise." className="w-28" />
           </a>
           <div className="flex gap-3 items-center">
             <Button text="Essai gratuit" theme="green" url="/" />

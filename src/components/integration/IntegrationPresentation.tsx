@@ -86,7 +86,6 @@ const IntegrationPresentation = () => {
             url="/"
             size="py-3"
           />
-          S
         </div>
       </div>
     </div>

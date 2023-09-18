@@ -1,8 +1,6 @@
 import React from "react";
 import Calendar from "../../../assets/icons/calendar.webp";
 import { navigationDataInterface } from "../../../types/navigationTypes";
-
-import MenuButton from "../MenuButton";
 import Slider from "../Slider";
 import MenuContainer from "./MenuContainer";
 import WebinarMovingText from "./WebinarMovingText";
@@ -70,21 +68,22 @@ const TopNavigation = ({
         </div>
         <div className="py-3 px-4 flex justify-end">
           <ul className="flex gap-3 [&>*:nth-child(1)]:bg-main-200 [&>*:nth-child(1)]:transition [&>*:nth-child(1)]:duration-200 [&>*:nth-child(1)]:ease-in-out [&>*:nth-child(1):hover]:bg-hover-200 [&>*:nth-child(1)]:rounded-[32px] [&>*:nth-child(1)]:py-[2px] [&>*:nth-child(1)]:px-[10px]">
-            {navigations.slice(-3).map((item, index) =>
-              item.isMenu ? (
-                <li key={index}>
-                  <MenuButton isTopNav text={item.text} theme={item.theme} />
-                </li>
-              ) : (
-                <a
-                  key={index}
-                  href="/"
-                  className="text-white hover:text-main-lighter transition ease-in-out duration-200"
-                >
-                  {item.text}
-                </a>
-              )
-            )}
+            {navigations.slice(-3).map((item, index) => (
+              <React.Fragment key={index}>
+                {item.isMenu ? (
+                  <MenuContainer
+                    isScrolled={isScrolled}
+                    n={item}
+                    key={index}
+                    isTopNav={true}
+                  />
+                ) : (
+                  <li className="text-white hover:text-main-lighter transition ease-in-out duration-200">
+                    <a href="/">{item.text}</a>
+                  </li>
+                )}
+              </React.Fragment>
+            ))}
           </ul>
         </div>
       </nav>
