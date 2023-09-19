@@ -42,11 +42,36 @@ const IntegrationPresentation = () => {
               },
             }}
           >
-            {detailedIntegrations.map((integration, index) => (
-              <SwiperSlide key={index}>
-                <DetailledCard integration={integration} />
-              </SwiperSlide>
-            ))}
+            {detailedIntegrations
+              .slice(0, detailedIntegrations.length / 2)
+              .map((integration, index) => (
+                <SwiperSlide key={index}>
+                  <DetailledCard integration={integration} />
+                </SwiperSlide>
+              ))}
+          </Swiper>
+        </div>
+
+        <div className="space-y-10 mt-12 md:hidden">
+          <Swiper
+            slidesPerView={2}
+            spaceBetween={20}
+            breakpoints={{
+              600: {
+                slidesPerView: 3,
+              },
+            }}
+          >
+            {detailedIntegrations
+              .slice(
+                detailedIntegrations.length / 2,
+                detailedIntegrations.length
+              )
+              .map((integration, index) => (
+                <SwiperSlide key={index}>
+                  <DetailledCard integration={integration} />
+                </SwiperSlide>
+              ))}
           </Swiper>
         </div>
 
