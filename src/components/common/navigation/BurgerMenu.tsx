@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { navigationDataInterface } from "../../../types/navigationTypes";
 import Button from "../Button";
 import BurgerMenuListItem from "./BurgerMenuListItem";
@@ -13,11 +13,19 @@ const BurgerMenu = ({
   dataTopNav: navigationDataInterface["topNavigation"];
 }) => {
   const [selectedMenuId, setSelectedMenuId] = useState<number | null>(null);
+  useEffect(() => {
+    if (isBurgerOpen) {
+      document.body.classList.add("overflow-hidden");
+    } else {
+      document.body.classList.remove("overflow-hidden");
+      setSelectedMenuId(null);
+    }
+  }, [isBurgerOpen]);
   return (
     <div
       className={`${
         isBurgerOpen ? "translate-x-0" : "-translate-x-full"
-      } transition z-[1] ease-in-out duration-500 flex flex-col gap-6 absolute bg-white h-screen w-full left-0 top-0 py-[42px] overflow-y-scroll`}
+      } transition -z-[1] ease-in-out duration-500 flex flex-col gap-6 fixed bottom-0 top-[98px] left-0 bg-white w-full py-[42px] overflow-auto`}
     >
       <ul className="mt-10 ">
         {dataBottomNav.navigations?.map((menu, index) => (

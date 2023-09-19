@@ -56,7 +56,7 @@ const BottomNavigation = ({
         </div>
       </nav>
 
-      <nav className="max-h-[96px] xl:hidden bg-white p-3 border-b border-white relative z-10">
+      <nav className="max-h-[96px] xl:hidden bg-white p-3 border-b border-white static z-10">
         <div className="flex justify-between items-center">
           <a href="/" className="relative z-10">
             <img src={Logo} alt="Logo et nom d'entreprise." className="w-28" />

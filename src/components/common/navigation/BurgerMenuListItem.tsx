@@ -34,7 +34,7 @@ const BurgerMenuListItem = ({
     <>
       {menu.menuData ? (
         <li
-          className="border-y border-gray-200 overflow-hidden py-5"
+          className="border-y border-gray-200 overflow-hidden py-5 text-secondary-500"
           onClick={handleSelectMenu}
         >
           <button className="flex justify-between items-center w-full px-4">
@@ -64,12 +64,8 @@ const BurgerMenuListItem = ({
               <div
                 key={index}
                 className={`${
-                  m.theme === "gray"
-                    ? "bg-gray-100 rounded-[24px]"
-                    : m.theme === "blue"
-                    ? "bg-secondary-500 rounded-[24px] text-white"
-                    : ""
-                } px-4 flex flex-col gap-4 py-8`}
+                  m.theme === "gray" ? "bg-gray-100 rounded-[24px]" : ""
+                } px-4 flex flex-col gap-4 py-5`}
               >
                 <span className="font-bold uppercase px-2">{m.title}</span>
 
@@ -79,7 +75,7 @@ const BurgerMenuListItem = ({
                   }`}
                 >
                   {m.contents.map((content, index) =>
-                    content.image ? (
+                    content.image && m.title === "nos intégrations" ? (
                       <li key={index} className="flex items-center gap-2">
                         <img
                           src={content.image}
@@ -98,7 +94,9 @@ const BurgerMenuListItem = ({
 
                 {m.secondContents && (
                   <>
-                    <span className="font-bold uppercase px-2">{m.title}</span>
+                    <span className="font-bold uppercase px-2">
+                      {m.secondTitle}
+                    </span>
                     <ul className="flex flex-col gap-3 px-4">
                       {m.secondContents.map((content, index) => (
                         <li key={index}>
@@ -112,13 +110,7 @@ const BurgerMenuListItem = ({
                 {m.link && (
                   <Link
                     text={m.link.text}
-                    theme={
-                      m.theme === "gray"
-                        ? "black"
-                        : m.theme === "blue"
-                        ? "white"
-                        : "black"
-                    }
+                    theme={"black"}
                     url={m.link.url}
                     hasChevron
                     isAlignCenter={false}
