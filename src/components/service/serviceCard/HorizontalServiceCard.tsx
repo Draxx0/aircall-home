@@ -3,6 +3,7 @@ import { servicePresentationType } from "../../../types/servicePresentationType"
 import Button from "../../common/Button";
 import TestimonialCard from "../TestimonialCard";
 import useAnimation from "../../../hooks/useAnimation";
+import ServiceFloater from "./ServicesFloater";
 
 const HorizontalServiceCard = ({
   service,
@@ -20,7 +21,7 @@ const HorizontalServiceCard = ({
       ref={containerRef}
       className={`${
         theme === "white" ? "bg-gray-100" : "bg-secondary-500"
-      } rounded-[64px] p-16 flex ${
+      } rounded-[32px] sm:rounded-[64px] p-6 sm:p-16 flex ${
         service.display === "row" ? "lg:flex-row" : "lg:flex-row-reverse"
       } gap-7 flex-col`}
     >
@@ -30,11 +31,7 @@ const HorizontalServiceCard = ({
           className="rounded-[32px] xl:max-h-[520px] w-full h-full object-cover"
           alt="image représentant l'augmentation de vente"
         />
-        <div className="absolute bottom-4 backdrop-blur-2xl bg-gradient-custom left-4 flex items-center gap-2 p-2 rounded-[24px]">
-          {service.image_logos.map((im, index) => (
-            <img src={im.image} alt="logo de service" key={index} />
-          ))}
-        </div>
+        <ServiceFloater service={service} />
       </div>
       <div className="flex flex-col justify-between xl:gap-0 gap-10">
         <div>

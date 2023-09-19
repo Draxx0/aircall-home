@@ -3,6 +3,7 @@ import { servicePresentationType } from "../../../types/servicePresentationType"
 import Button from "../../common/Button";
 import TestimonialCard from "../TestimonialCard";
 import useAnimation from "../../../hooks/useAnimation";
+import ServiceFloater from "./ServicesFloater";
 
 const ServiceCard = ({
   service,
@@ -20,7 +21,7 @@ const ServiceCard = ({
       ref={containerRef}
       className={`${
         theme === "white" ? "bg-gray-100" : "bg-secondary-500"
-      } rounded-[64px] p-16 w-full lg:w-1/2`}
+      } rounded-[32px] sm:rounded-[64px] p-6 sm:p-16 w-full lg:w-1/2`}
     >
       <div className="mb-14 space-y-6">
         <div className="relative">
@@ -29,17 +30,13 @@ const ServiceCard = ({
             className="rounded-[32px] w-full lg:max-h-[300px] object-cover"
             alt="image représentant l'augmentation de vente"
           />
-          <div className="absolute bottom-4 backdrop-blur-2xl bg-gradient-custom  left-4 flex items-center gap-2 p-2 rounded-[24px]">
-            {service.image_logos.map((im, index) => (
-              <img src={im.image} alt="logo de service" key={index} />
-            ))}
-          </div>
+          <ServiceFloater service={service} />
         </div>
         <div className="space-y-4">
-          <h3 className="text-3xl text-secondary-900 font-semibold">
+          <h3 className="text-3xl text-secondary-500 font-semibold">
             {service.title}
           </h3>
-          <p className="text-gray-400 text-lg">{service.text}</p>
+          <p className="text-secondary-500/70 text-lg">{service.text}</p>
           <Button
             text={service.buttonParams.text}
             theme={service.buttonParams.theme}

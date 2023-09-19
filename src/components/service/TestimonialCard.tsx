@@ -18,7 +18,7 @@ const TestimonialCard = ({
   );
   return (
     <div className={cardClasses}>
-      <div className="flex gap-4">
+      <div className="space-y-3 lg:flex lg:gap-4">
         <img
           src={testimonial.image}
           className="w-12 h-12 object-cover rounded-full"

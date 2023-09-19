@@ -23,7 +23,7 @@ const ProductCard = ({
       <h3 className="text-secondary-500 text-3xl font-semibold">
         {data.title}
       </h3>
-      <p className="text-gray-400 text-lg">{data.text}</p>
+      <p className="text-secondary-500/70 text-lg">{data.text}</p>
       <Link
         text={data.buttonParams.text}
         url={data.buttonParams.url}

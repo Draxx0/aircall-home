@@ -9,7 +9,7 @@ const CompanyPresentation = () => {
   return (
     <>
       <div className="space-y-10 mb-10 md:mb-0 md:px-10 md:mt-10 ">
-        <p className="uppercase font-semibold tracking-widest text-center text-gray-400">
+        <p className="uppercase font-semibold tracking-widest text-center text-secondary-900/70">
           approuvé par plus de 17 000 entreprises
         </p>
 
