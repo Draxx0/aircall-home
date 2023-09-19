@@ -8,6 +8,7 @@
       {
         "text": "Devenir partenaire",
         "theme": "white",
+        "id": 1,
         "isMenu": true,
         "menuData": [
           {
@@ -35,6 +36,7 @@
       {
         "text": "Entreprise",
         "theme": "white",
+        "id": 2,
         "isMenu": true,
         "menuData": [
           {
@@ -77,21 +79,25 @@
       {
         "text": "Contactez-nous",
         "theme": "white",
+        "id": 3,
         "isMenu": false
       },
       {
         "text": "+33 1 76 36 06 95",
         "theme": "white",
+        "id": 4,
         "isMenu": false
       },
       {
         "text": "Login",
         "theme": "white",
+        "id": 5,
         "isMenu": false
       },
       {
         "text": "FR",
         "theme": "white",
+        "id": 6,
         "isMenu": true,
         "menuData": [
           {
@@ -123,6 +129,7 @@
       {
         "text": "Pourquoi Aircall",
         "theme": "black",
+        "id": 7,
         "isMenu": true,
         "menuData": [
           {
@@ -201,6 +208,7 @@
       {
         "text": "Solutions",
         "theme": "black",
+        "id": 8,
         "isMenu": true,
         "menuData": [
           {
@@ -299,11 +307,13 @@
       {
         "text": "Prix",
         "theme": "black",
+        "id": 9,
         "isMenu": false
       },
       {
         "text": "Ressources",
         "theme": "black",
+        "id": 10,
         "isMenu": true,
         "menuData": [
           {

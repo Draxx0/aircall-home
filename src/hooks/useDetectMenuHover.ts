@@ -10,25 +10,16 @@ const useDetectMenuHover = ({
   const [isHovered, setIsHovered] = useState(false);
 
   const handleMouseEnter = () => {
-    console.log("I ENTER ");
     setIsHovered(true);
   };
 
   const handleMouseLeave = () => {
-    console.log("I LEAVE");
     setIsHovered(false);
   };
 
   useEffect(() => {
     const menuElement = menuRef.current;
     const containerElement = menuContainerRef.current;
-
-    // console.log(
-    //   "triggered this menu",
-    //   menuElement,
-    //   "for this container",
-    //   containerElement
-    // );
 
     if (menuElement) {
       menuElement.addEventListener("mouseenter", handleMouseEnter);

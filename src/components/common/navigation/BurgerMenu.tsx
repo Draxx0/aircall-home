@@ -1,26 +1,50 @@
+import { useState } from "react";
+import { navigationDataInterface } from "../../../types/navigationTypes";
+import Button from "../Button";
+import BurgerMenuListItem from "./BurgerMenuListItem";
+
 const BurgerMenu = ({
   isBurgerOpen,
-  setIsburgerOpen,
+  dataBottomNav,
+  dataTopNav,
 }: {
   isBurgerOpen: boolean;
-  setIsburgerOpen: React.Dispatch<React.SetStateAction<boolean>>;
+  dataBottomNav: navigationDataInterface["bottomNavigation"];
+  dataTopNav: navigationDataInterface["topNavigation"];
 }) => {
+  const [selectedMenuId, setSelectedMenuId] = useState<number | null>(null);
   return (
-    <button
-      className="flex flex-col gap-[3px]"
-      onClick={() => setIsburgerOpen(!isBurgerOpen)}
+    <div
+      className={`${
+        isBurgerOpen ? "translate-x-0" : "-translate-x-full"
+      } transition z-[1] ease-in-out duration-500 flex flex-col gap-6 absolute bg-white h-screen w-full left-0 top-0 py-[42px] overflow-y-scroll`}
     >
-      <span
-        className={`bg-main-500 h-[2px] w-[18px] transition ease-in-out duration-300 ${
-          isBurgerOpen ? "rotate-45  translate-y-full" : "rotate-0"
-        }`}
-      ></span>
-      <span
-        className={`bg-main-500 h-[2px] w-[18px] transition ease-in-out duration-300 ${
-          isBurgerOpen ? "-rotate-45 -translate-y-full" : "rotate-0"
-        }`}
-      ></span>
-    </button>
+      <ul className="mt-10 ">
+        {dataBottomNav.navigations?.map((menu, index) => (
+          <BurgerMenuListItem
+            key={index}
+            menu={menu}
+            setSelectedMenu={setSelectedMenuId}
+            selectedMenuId={selectedMenuId}
+            menuId={menu.id}
+          />
+        ))}
+        {dataTopNav.navigations?.slice(0, -3).map((menu, index) => (
+          <BurgerMenuListItem
+            key={index}
+            menu={menu}
+            setSelectedMenu={setSelectedMenuId}
+            selectedMenuId={selectedMenuId}
+            menuId={menu.id}
+          />
+        ))}
+      </ul>
+
+      <div className="flex flex-col gap-2 px-4">
+        <Button text="Demandez une démo" theme="light" url="/" size="py-3" />
+        <Button text="Essai gratuit" theme="green" url="/" size="py-3" />
+      </div>
+    </div>
   );
 };
 

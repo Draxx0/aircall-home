@@ -2,8 +2,9 @@ import { useState } from "react";
 import Logo from "../../../assets/images/logo.png";
 import { navigationDataInterface } from "../../../types/navigationTypes";
 import Button from "../Button";
-import BurgerMenu from "./BurgerMenu";
 import MenuContainer from "./MenuContainer";
+import BurgerBar from "./BurgerBar";
+import BurgerMenu from "./BurgerMenu";
 
 const BottomNavigation = ({
   data,
@@ -55,18 +56,23 @@ const BottomNavigation = ({
         </div>
       </nav>
 
-      <nav className="max-h-[96px] xl:hidden bg-white p-3 border-b border-white">
+      <nav className="max-h-[96px] xl:hidden bg-white p-3 border-b border-white relative z-10">
         <div className="flex justify-between items-center">
-          <a href="/">
+          <a href="/" className="relative z-10">
             <img src={Logo} alt="Logo et nom d'entreprise." className="w-28" />
           </a>
-          <div className="flex gap-3 items-center">
+          <div className="flex gap-3 items-center relative z-10">
             <Button text="Essai gratuit" theme="green" url="/" />
-            <BurgerMenu
+            <BurgerBar
               isBurgerOpen={isBurgerOpen}
               setIsburgerOpen={setIsBurgerOpen}
             />
           </div>
+          <BurgerMenu
+            isBurgerOpen={isBurgerOpen}
+            dataBottomNav={data.bottomNavigation}
+            dataTopNav={data.topNavigation}
+          />
         </div>
       </nav>
     </>

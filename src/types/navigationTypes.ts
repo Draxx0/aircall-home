@@ -11,13 +11,22 @@ export interface navigationDataInterface {
       text: string;
       theme: MenuBtnTheme;
       isMenu: boolean;
+      id: number;
       menuData?: {
         title: string;
+        secondTitle?: string;
         contents: {
           text: string;
           url: string;
           image?: string;
         }[];
+        secondContents?: {
+          text: string;
+          url: string;
+          image?: string;
+        }[];
+        isGrid?: boolean;
+        theme?: "gray" | "blue";
         link?: {
           text: string;
           url: string;
@@ -36,6 +45,7 @@ export interface navigationDataInterface {
   bottomNavigation: {
     navigations: {
       text: string;
+      id: number;
       theme: MenuBtnTheme;
       isMenu: boolean;
       menuData?: {

@@ -1,5 +1,6 @@
 import clsx from "clsx";
 import { MenuBtnTheme } from "./MenuButton";
+import { twMerge } from "tailwind-merge";
 
 const Chevron = ({
   theme,
@@ -16,7 +17,7 @@ const Chevron = ({
     },
     " w-[7px] h-[7px] border-b-[1.5px] border-r-[1.5px] border-solid rotate-45 ease-in-out duration-200"
   );
-  return <div className={`${chevronClasses} ${className}`}></div>;
+  return <div className={twMerge(chevronClasses, className)}></div>;
 };
 
 export default Chevron;
