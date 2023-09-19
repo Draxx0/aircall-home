@@ -1,5 +1,5 @@
 import HeaderImage from "../assets/images/header_image.webp";
-import GetFreeTryInput from "../components/GetFreeTryInput";
+import GetFreeTryInput from "../components/common/GetFreeTryInput";
 import Button from "../components/common/Button";
 import DemoBlock from "../components/common/DemoBlock";
 import Section from "../components/common/Section";
